@@ -5,6 +5,7 @@
  */
 package Model;
 
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 /**
@@ -13,13 +14,13 @@ import java.util.Date;
  */
 public class Tiquete {
 
-protected Date fecha;
+protected DateTimeFormatter fecha = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 protected String carneEstudiante;
 protected String nombreEstudiante;
 protected String correoEstudiante;
 protected int IDTiquete;
 
-    public Tiquete(Date fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
+    public Tiquete(DateTimeFormatter fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
         this.fecha = fecha;
         this.carneEstudiante = carneEstudiante;
         this.nombreEstudiante = nombreEstudiante;
@@ -27,7 +28,7 @@ protected int IDTiquete;
         this.IDTiquete = IDTiquete;
     }
 
-    public Date getFecha() {
+    public DateTimeFormatter getFecha() {
         return fecha;
     }
 
@@ -47,7 +48,7 @@ protected int IDTiquete;
         return IDTiquete;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(DateTimeFormatter fecha) {
         this.fecha = fecha;
     }
 
