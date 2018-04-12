@@ -5,6 +5,7 @@
  */
 package Model;
 
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
@@ -14,13 +15,13 @@ import java.util.Date;
  */
 public class Tiquete {
 
-protected DateTimeFormatter fecha = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+protected LocalDateTime fecha;
 protected String carneEstudiante;
 protected String nombreEstudiante;
 protected String correoEstudiante;
 protected int IDTiquete;
 
-    public Tiquete(DateTimeFormatter fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
+    public Tiquete(LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
         this.fecha = fecha;
         this.carneEstudiante = carneEstudiante;
         this.nombreEstudiante = nombreEstudiante;
@@ -28,7 +29,7 @@ protected int IDTiquete;
         this.IDTiquete = IDTiquete;
     }
 
-    public DateTimeFormatter getFecha() {
+    public LocalDateTime getFecha() {
         return fecha;
     }
 
@@ -48,8 +49,9 @@ protected int IDTiquete;
         return IDTiquete;
     }
 
-    public void setFecha(DateTimeFormatter fecha) {
-        this.fecha = fecha;
+    public void setFecha() {
+        LocalDateTime now = LocalDateTime.now();
+        this.fecha = now;
     }
 
     public void setCarneEstudiante(String carneEstudiante) {
