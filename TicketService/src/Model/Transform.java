@@ -9,6 +9,6 @@ package Model;
  *
  * @author carme
  */
-public interface Transform {
-    public void transferToBD();
+public abstract class Transform {
+    public void transferToBD(){};
 }

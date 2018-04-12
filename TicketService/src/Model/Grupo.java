@@ -13,13 +13,13 @@ import Model.Profesor;
  */
 public class Grupo {
     public int numGrupo;
-    public int codCurso;
+    public int codigoCurso;
     public String nombreProfesor;
-    public String notificaciones;
+    public int notificaciones;
 
-    public Grupo(int numGrupo, int codCurso, String nombreProfesor, String notificaciones) {
+    public Grupo(int numGrupo, int codigoCurso, String nombreProfesor, int notificaciones) {
         this.numGrupo = numGrupo;
-        this.codCurso = codCurso;
+        this.codigoCurso = codigoCurso;
         this.nombreProfesor = nombreProfesor;
         this.notificaciones = notificaciones;
     }
@@ -28,15 +28,15 @@ public class Grupo {
         return numGrupo;
     }
 
-    public int getCodCurso() {
-        return codCurso;
+    public int getCodigoCurso() {
+        return codigoCurso;
     }
 
     public String getNombreProfesor() {
         return nombreProfesor;
     }
 
-    public String getNotificaciones() {
+    public int getNotificaciones() {
         return notificaciones;
     }
 
@@ -44,15 +44,15 @@ public class Grupo {
         this.numGrupo = numGrupo;
     }
 
-    public void setCodCurso(int codCurso) {
-        this.codCurso = codCurso;
+    public void setCodigoCurso(int codigoCurso) {
+        this.codigoCurso = codigoCurso;
     }
 
     public void setNombreProfesor(String nombreProfesor) {
         this.nombreProfesor = nombreProfesor;
     }
 
-    public void setNotificaciones(String notificaciones) {
+    public void setNotificaciones(int notificaciones) {
         this.notificaciones = notificaciones;
     }
     

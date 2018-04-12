@@ -5,6 +5,7 @@
  */
 package Model;
 import Model.Tiquete;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
@@ -19,7 +20,7 @@ public class TiqueteReclamoEvaluacion extends Tiquete {
     private String detalleReclame;
     private String nombreArchivo;
 
-    public TiqueteReclamoEvaluacion(String detallesResolucion, String archivoAdjunto, String tipoPrueba, String detalleReclame, String nombreArchivo, Date fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
+    public TiqueteReclamoEvaluacion(String detallesResolucion, String archivoAdjunto, String tipoPrueba, String detalleReclame, String nombreArchivo, LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
         super(fecha, carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete);
         this.detallesResolucion = detallesResolucion;
         this.archivoAdjunto = archivoAdjunto;

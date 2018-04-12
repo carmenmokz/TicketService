@@ -13,13 +13,13 @@ public class Profesor {
     private String nombreCompleto;
     private String correo;
     private String password;
-    private int IDCurso;
+    private String codigoCurso;
 
-    public Profesor(String nombreCompleto, String correo, String password, int IDCurso) {
+    public Profesor(String nombreCompleto, String correo, String password, String codigoCurso) {
         this.nombreCompleto = nombreCompleto;
         this.correo = correo;
         this.password = password;
-        this.IDCurso = IDCurso;
+        this.codigoCurso = codigoCurso;
     }
 
     public String getNombreCompleto() {
@@ -34,8 +34,8 @@ public class Profesor {
         return password;
     }
 
-    public int getIDCurso() {
-        return IDCurso;
+    public String getcodigoCurso() {
+        return codigoCurso;
     }
 
     public void setNombreCompleto(String nombreCompleto) {
@@ -50,8 +50,8 @@ public class Profesor {
         this.password = password;
     }
 
-    public void setIDCurso(int IDCurso) {
-        this.IDCurso = IDCurso;
+    public void setcodigoCurso(String codigoCurso) {
+        this.codigoCurso = codigoCurso;
     }
     
     
