@@ -27,6 +27,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.xml.sax.SAXException;
 
 /**
  *
@@ -99,6 +100,20 @@ public class XML extends Transform{
 
     @Override
     public void transformarATiquete(String file) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try {
+            
+            File filename =new File(file);
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder;
+            dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(filename.getAbsolutePath());
+            
+        } catch (ParserConfigurationException ex) {
+            Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SAXException ex) {
+            Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }
