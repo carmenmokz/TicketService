@@ -5,10 +5,15 @@
  */
 package Model;
 
+import javax.xml.transform.stream.StreamResult;
+import org.w3c.dom.Document;
+
 /**
  *
  * @author carme
  */
 public abstract class Transform {
-    public void transferToBD(){};
+    abstract public void transformarProperties(String file, String id);
+    
+    abstract public void transformarATiquete(String file);
 }
