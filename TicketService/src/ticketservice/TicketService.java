@@ -5,6 +5,8 @@
  */
 package ticketservice;
 
+import Model.DAOUsuario;
+
 /**
  *
  * @author Monserrath
@@ -16,6 +18,9 @@ public class TicketService {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        DAOUsuario con = new DAOUsuario();
+        con.OpenConnection();
+        
     }
     
 }
