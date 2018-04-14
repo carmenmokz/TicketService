@@ -21,8 +21,8 @@ protected String nombreEstudiante;
 protected String correoEstudiante;
 protected int IDTiquete;
 
-    public Tiquete(LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
-        this.fecha = fecha;
+    public Tiquete(String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
+        this.fecha = LocalDateTime.now();
         this.carneEstudiante = carneEstudiante;
         this.nombreEstudiante = nombreEstudiante;
         this.correoEstudiante = correoEstudiante;

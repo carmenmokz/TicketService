@@ -7,9 +7,7 @@
 
 package Model;
 
-import Model.Tiquete;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 /**
  *
@@ -29,8 +27,8 @@ public class TiqueteConsulta extends Tiquete{
     }
     */
 
-    public TiqueteConsulta(String duracion, String detalles, String credencias, String asunto, String tipoTiquete, LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
-        super(fecha, carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete);
+    public TiqueteConsulta(String duracion, String detalles, String credencias, String asunto, String tipoTiquete, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
+        super(carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete);
         this.duracion = duracion;
         this.detalles = detalles;
         this.credencias = credencias;
@@ -38,6 +36,7 @@ public class TiqueteConsulta extends Tiquete{
         this.tipoTiquete = tipoTiquete;
     }
 
+    
     public String getDuracion() {
         return duracion;
     }
