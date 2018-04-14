@@ -34,8 +34,10 @@ import org.xml.sax.SAXException;
  * @author carme
  */
 public class XML extends Transform{
+    public static int id;
+    
     @Override
-    public void transformarProperties(String file, String id){
+    public void transformarProperties(String file){
         try {
                 File filename =new File(file);
                 FileReader reader = new FileReader(filename.getAbsolutePath());
@@ -45,7 +47,7 @@ public class XML extends Transform{
     		//Crea el nombre del archivo xml con el nombre y el id del archivo
     		
                 String xmlName = (prop.getProperty("carne")+"-"+id+".xml");
-                
+                id++;
                 DocumentBuilderFactory PropertiesFile = DocumentBuilderFactory.newInstance();
                 DocumentBuilder XMLBuilder = PropertiesFile.newDocumentBuilder();
                 Document doc = XMLBuilder.newDocument();
@@ -107,6 +109,8 @@ public class XML extends Transform{
             DocumentBuilder dBuilder;
             dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(filename.getAbsolutePath());
+            
+            doc.getElementsByTagName(file)
             
         } catch (ParserConfigurationException ex) {
             Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);

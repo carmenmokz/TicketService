@@ -13,7 +13,7 @@ import org.w3c.dom.Document;
  * @author carme
  */
 public abstract class Transform {
-    abstract public void transformarProperties(String file, String id);
+    abstract public void transformarProperties(String file);
     
     abstract public void transformarATiquete(String file);
 }
