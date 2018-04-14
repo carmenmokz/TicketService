@@ -27,13 +27,10 @@ public class TiqueteConsulta extends Tiquete{
     }
     */
 
-<<<<<<< HEAD
+
     public TiqueteConsulta(String duracion, String detalles, String credenciales, String asunto, String tipoTiquete, LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete, int grupo) {
         super(fecha, carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete, grupo);
-=======
-    public TiqueteConsulta(String duracion, String detalles, String credencias, String asunto, String tipoTiquete, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
-        super(carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete);
->>>>>>> master
+
         this.duracion = duracion;
         this.detalles = detalles;
         this.credenciales = credenciales;

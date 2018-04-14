@@ -20,13 +20,8 @@ public class TiqueteRevisionProyecto extends Tiquete{
     private String descripcion;
     private String nombreArchivo;
 
-<<<<<<< HEAD
     public TiqueteRevisionProyecto(String lugar, String comentario, String descripcion, String nombreArchivo, LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete, int grupo) {
         super(fecha, carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete, grupo);
-=======
-    public TiqueteRevisionProyecto(String lugar, String comentario, String descripcion, String nombreArchivo, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
-        super(carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete);
->>>>>>> master
         this.lugar = lugar;
         this.comentario = comentario;
         this.descripcion = descripcion;
