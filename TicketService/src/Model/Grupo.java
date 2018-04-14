@@ -5,8 +5,6 @@
  */
 package Model;
 
-import Model.Profesor;
-
 /**
  *
  * @author Monserrath

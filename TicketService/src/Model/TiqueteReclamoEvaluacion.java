@@ -4,9 +4,7 @@
  * and open the template in the editor.
  */
 package Model;
-import Model.Tiquete;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 /**
  *

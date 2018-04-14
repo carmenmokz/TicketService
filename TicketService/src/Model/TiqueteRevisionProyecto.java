@@ -5,9 +5,7 @@
  */
 package Model;
 
-import Model.Tiquete;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 /**
  *
