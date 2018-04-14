@@ -22,8 +22,13 @@ protected String correoEstudiante;
 protected int IDTiquete;
 protected int grupo;
 
+<<<<<<< HEAD
     public Tiquete(LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete, int grupo) {
         this.fecha = fecha;
+=======
+    public Tiquete(String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
+        this.fecha = LocalDateTime.now();
+>>>>>>> master
         this.carneEstudiante = carneEstudiante;
         this.nombreEstudiante = nombreEstudiante;
         this.correoEstudiante = correoEstudiante;

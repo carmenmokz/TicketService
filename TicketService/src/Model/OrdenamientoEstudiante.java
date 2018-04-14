@@ -5,17 +5,20 @@
  */
 package Model;
 
-import Model.Ordenamiento;
+import java.util.Collections;
+//importar la lista
 
 /**
  *
  * @author Monserrath
  */
-public class OrdenamientoEstudiante implements Ordenamiento{
+public class OrdenamientoEstudiante implements OrdenamientoStrategy{
 
     @Override
     public void ordenar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //Ese list, es la lista que se va a comparar, nadamas que aqui todavia no existe
+        //bueno, tecnicamente XD.
+        //Collections.sort(nombre de la lista, (Tiquete t1, Tiquete t2) -> t1.nombreEstudiante.compareTo(t2.nombreEstudiante));
+        
     }
-    
 }

@@ -20,14 +20,21 @@ public class TiqueteReclamoEvaluacion extends Tiquete {
     private String detalleReclamo;
     private String nombreArchivo;
 
+<<<<<<< HEAD
     public TiqueteReclamoEvaluacion(String detallesResolucion, String archivoAdjunto, String tipoPrueba, String detalleReclamo, String nombreArchivo, LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete, int grupo) {
         super(fecha, carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete, grupo);
+=======
+    public TiqueteReclamoEvaluacion(String detallesResolucion, String archivoAdjunto, String tipoPrueba, String detalleReclame, String nombreArchivo, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
+        super(carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete);
+>>>>>>> master
         this.detallesResolucion = detallesResolucion;
         this.archivoAdjunto = archivoAdjunto;
         this.tipoPrueba = tipoPrueba;
         this.detalleReclamo = detalleReclamo;
         this.nombreArchivo = nombreArchivo;
     }
+
+    
 
     public String getDetallesResolucion() {
         return detallesResolucion;

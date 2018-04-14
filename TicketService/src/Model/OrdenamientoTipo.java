@@ -12,11 +12,10 @@ import java.util.Collections;
  *
  * @author Monserrath
  */
-public class OrdenamientoFecha implements OrdenamientoStrategy {
-    
+public class OrdenamientoTipo implements OrdenamientoStrategy{
+
     @Override
     public void ordenar() {
-        //Collections.sort(nombre de la lista, (Tiquete t1, Tiquete t2) -> t1.fecha.compareTo(t2.fecha));
+        //Collections.sort(nombre lista, (Profesor t1, Profesor t2) -> t1.compareTo(t2));
     }
-    
 }
