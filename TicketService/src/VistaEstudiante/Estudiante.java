@@ -32,7 +32,7 @@ public class Estudiante {
            
            System.out.println("Bienvenido/a al progama para enviar tickets");
            System.out.println("Seleccione una de las siguientes opciones: \n");
-           System.out.println("1. Help   (Brinda información sobre la sintaxis en la que debe manipularse la aplicación)");
+           System.out.println("1. Pene   (Brinda información sobre la sintaxis en la que debe manipularse la aplicación)");
            System.out.println("3. VPC    (Ver profesores con cursos registrados en el sistema)");
            System.out.println("4. SendC  (Envía un ticket solicitando una cita para consulta)");
            System.out.println("5. sendRP (Enviar un ticket solicitando una cita para revisión de proyecto)");
