@@ -7,6 +7,9 @@ package Model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import javax.swing.JOptionPane;
 
 /**
@@ -15,6 +18,10 @@ import javax.swing.JOptionPane;
  */
 public class DAOUsuario {
     static Connection connection;
+    
+    public DAOUsuario(){
+        OpenConnection();
+    }
     
     public static Connection OpenConnection(){
         try {
@@ -29,5 +36,48 @@ public class DAOUsuario {
         return null;
     }
     
+    //VERIFICA QUE EL USUARIO DEL LOGIN EXISTA DENTRO DE LA BASE DE DATOS
+    public boolean leer(String loginMail, String password) throws SQLException{
+        Statement st = connection.createStatement();
+        ResultSet rs;
+        rs = st.executeQuery("SELECT correo, password FROM Usuario");
+        String login;
+        String pwd;
+        while(rs.next()){
+            login = rs.getString("correo");
+            pwd = rs.getString("password");
+            if(login==loginMail && pwd==password){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        return false;
+    }
+    
+    //INSERTA UN NUEVO USUARIO A LA TABLA DE USUARIO DE LA BASE DE DATOS
+    public void crear(String nombreCompleto, String password, String correo, String tipoUsuario, int carne) throws SQLException{
+        Statement st = connection.createStatement();
+        st.executeUpdate("INSERT INTO Usuario " +
+                         "   (codigoCurso, " +
+                         "   nombreCurso, " +
+                         "   creditos, " +
+                         "   horasSemanales)\n" +
+                         "VALUES " +
+                         "   ('" + nombreCompleto + "' , " +
+                         "   '" + password + "', " +
+                         "   " + correo + ", " +
+                         "   " + tipoUsuario + ", " +
+                         "   " + carne + ")");
+    }
+    
+    //actualizar
+    
+    //BORRA ELEMENTO DE LA TABLA USUARIO DE LA BASE DE DATOS SEGUN SU NUMERO DE CARNE
+    public void borrar(int carne) throws SQLException{
+        Statement st = connection.createStatement();
+        st.executeUpdate("DELETE FROM Curso\n" +
+                         "WHERE codigoCurso = " + "'" + carne + "'" + ";");
+    }
     
 }

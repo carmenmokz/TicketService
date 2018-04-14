@@ -24,7 +24,6 @@ protected int grupo;
 
     public Tiquete(LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete, int grupo) {
         this.fecha = fecha;
-
         this.carneEstudiante = carneEstudiante;
         this.nombreEstudiante = nombreEstudiante;
         this.correoEstudiante = correoEstudiante;

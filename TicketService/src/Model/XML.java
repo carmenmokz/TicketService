@@ -35,7 +35,11 @@ import org.xml.sax.SAXException;
  * @author carme
  */
 public class XML extends GestorDocumentos{
-    public static int id;
+    public static int id = 1;
+
+    public XML(String file) {
+        super(file);
+    }
     
     @Override
     public void transformarDocumento(String file){
@@ -258,9 +262,8 @@ public class XML extends GestorDocumentos{
         return null;
     }
 
-    
     @Override
-    public Tiquete transformarATiquete(String type, String file) {
+    public Tiquete transformarATiquete(String type) {
         try {
             switch (type) {
                 case "sendC":
