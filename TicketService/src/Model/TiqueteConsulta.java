@@ -28,6 +28,7 @@ public class TiqueteConsulta extends Tiquete{
     */
 
 
+
     public TiqueteConsulta(String duracion, String detalles, String credenciales, String asunto, String tipoTiquete, LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete, int grupo) {
         super(fecha, carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete, grupo);
 

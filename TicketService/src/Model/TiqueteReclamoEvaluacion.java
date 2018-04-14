@@ -21,6 +21,7 @@ public class TiqueteReclamoEvaluacion extends Tiquete {
 
     public TiqueteReclamoEvaluacion(String detallesResolucion, String archivoAdjunto, String tipoPrueba, String detalleReclamo, String nombreArchivo, LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete, int grupo) {
         super(fecha, carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete, grupo);
+
         this.detallesResolucion = detallesResolucion;
         this.archivoAdjunto = archivoAdjunto;
         this.tipoPrueba = tipoPrueba;
