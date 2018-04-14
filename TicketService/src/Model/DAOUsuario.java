@@ -19,7 +19,7 @@ public class DAOUsuario {
     public static Connection OpenConnection(){
         try {
             DriverManager.registerDriver(new com.microsoft.sqlserver.jdbc.SQLServerDriver());
-            connection = DriverManager.getConnection("jdbc:sqlserver://localhost;databseName=Tickets;user=sa;password=bulletproof");
+            connection = DriverManager.getConnection("jdbc:sqlserver://localhost;databaseName=Tickets;user=sa;password=bulletproof");
             if (connection != null) {
                 System.out.println("Connected to Database");
                 return connection;

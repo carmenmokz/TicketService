@@ -12,8 +12,8 @@ import org.w3c.dom.Document;
  *
  * @author carme
  */
-public abstract class Transform {
-    abstract public void transformarProperties(String file);
+public abstract class GestorDocumentos {
+    abstract public void transformarDocumento(String file);
     
-    abstract public void transformarATiquete(String file);
+    abstract public Tiquete transformarATiquete(String type, String file);
 }

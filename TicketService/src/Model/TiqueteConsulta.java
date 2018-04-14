@@ -19,7 +19,7 @@ public class TiqueteConsulta extends Tiquete{
     
     private String duracion;
     private String detalles;
-    private String credencias;
+    private String credenciales;
     private String asunto;
     private String tipoTiquete;
     
@@ -29,11 +29,11 @@ public class TiqueteConsulta extends Tiquete{
     }
     */
 
-    public TiqueteConsulta(String duracion, String detalles, String credencias, String asunto, String tipoTiquete, LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
-        super(fecha, carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete);
+    public TiqueteConsulta(String duracion, String detalles, String credenciales, String asunto, String tipoTiquete, LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete, int grupo) {
+        super(fecha, carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete, grupo);
         this.duracion = duracion;
         this.detalles = detalles;
-        this.credencias = credencias;
+        this.credenciales = credenciales;
         this.asunto = asunto;
         this.tipoTiquete = tipoTiquete;
     }
@@ -46,8 +46,8 @@ public class TiqueteConsulta extends Tiquete{
         return detalles;
     }
 
-    public String getCredencias() {
-        return credencias;
+    public String getCredenciales() {
+        return credenciales;
     }
 
     public String getAsunto() {
@@ -66,8 +66,8 @@ public class TiqueteConsulta extends Tiquete{
         this.detalles = detalles;
     }
 
-    public void setCredencias(String credencias) {
-        this.credencias = credencias;
+    public void setCredencias(String credenciales) {
+        this.credenciales = credenciales;
     }
 
     public void setAsunto(String asunto) {

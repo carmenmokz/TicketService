@@ -17,15 +17,15 @@ public class TiqueteReclamoEvaluacion extends Tiquete {
     private String detallesResolucion;
     private String archivoAdjunto;
     private String tipoPrueba;
-    private String detalleReclame;
+    private String detalleReclamo;
     private String nombreArchivo;
 
-    public TiqueteReclamoEvaluacion(String detallesResolucion, String archivoAdjunto, String tipoPrueba, String detalleReclame, String nombreArchivo, LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
-        super(fecha, carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete);
+    public TiqueteReclamoEvaluacion(String detallesResolucion, String archivoAdjunto, String tipoPrueba, String detalleReclamo, String nombreArchivo, LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete, int grupo) {
+        super(fecha, carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete, grupo);
         this.detallesResolucion = detallesResolucion;
         this.archivoAdjunto = archivoAdjunto;
         this.tipoPrueba = tipoPrueba;
-        this.detalleReclame = detalleReclame;
+        this.detalleReclamo = detalleReclamo;
         this.nombreArchivo = nombreArchivo;
     }
 
@@ -41,8 +41,8 @@ public class TiqueteReclamoEvaluacion extends Tiquete {
         return tipoPrueba;
     }
 
-    public String getDetalleReclame() {
-        return detalleReclame;
+    public String getDetalleReclamo() {
+        return detalleReclamo;
     }
 
     public String getNombreArchivo() {
@@ -61,8 +61,8 @@ public class TiqueteReclamoEvaluacion extends Tiquete {
         this.tipoPrueba = tipoPrueba;
     }
 
-    public void setDetalleReclame(String detalleReclame) {
-        this.detalleReclame = detalleReclame;
+    public void setDetalleReclamo(String detalleReclamo) {
+        this.detalleReclamo = detalleReclamo;
     }
 
     public void setNombreArchivo(String nombreArchivo) {

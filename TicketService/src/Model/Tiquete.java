@@ -20,13 +20,15 @@ protected String carneEstudiante;
 protected String nombreEstudiante;
 protected String correoEstudiante;
 protected int IDTiquete;
+protected int grupo;
 
-    public Tiquete(LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
+    public Tiquete(LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete, int grupo) {
         this.fecha = fecha;
         this.carneEstudiante = carneEstudiante;
         this.nombreEstudiante = nombreEstudiante;
         this.correoEstudiante = correoEstudiante;
         this.IDTiquete = IDTiquete;
+        this.grupo = grupo;
     }
 
     public LocalDateTime getFecha() {
@@ -48,6 +50,10 @@ protected int IDTiquete;
     public int getIDTiquete() {
         return IDTiquete;
     }
+    
+    public int getGrupo(){
+        return grupo;
+    }
 
     public void setFecha() {
         LocalDateTime now = LocalDateTime.now();
@@ -68,6 +74,10 @@ protected int IDTiquete;
 
     public void setIDTiquete(int IDTiquete) {
         this.IDTiquete = IDTiquete;
+    }
+    
+    public void setGrupo(int grupo){
+        this.grupo = grupo;
     }
       
 }
