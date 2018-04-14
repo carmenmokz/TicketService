@@ -37,6 +37,8 @@ public class DAOUsuario {
     }
     
     //VERIFICA QUE EL USUARIO DEL LOGIN EXISTA DENTRO DE LA BASE DE DATOS
+    //RETORNA TRUE SI SE ENCUENTRA EN LA BASE DE DATOS
+    //RETORNA FALSE SI NO SE ENCUENTRA EN LA BASE DE DATOS
     public boolean leer(String loginMail, String password) throws SQLException{
         Statement st = connection.createStatement();
         ResultSet rs;
@@ -46,7 +48,7 @@ public class DAOUsuario {
         while(rs.next()){
             login = rs.getString("correo");
             pwd = rs.getString("password");
-            if(login==loginMail && pwd==password){
+            if(login.equals(loginMail) && pwd.equals(password)){
                 return true;
             }else{
                 return false;
