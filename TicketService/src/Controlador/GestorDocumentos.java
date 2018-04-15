@@ -21,7 +21,6 @@ public abstract class GestorDocumentos {
         this.file = file;
     }
     
-    abstract public void transformarDocumento(String file);
+    abstract public void transformarDocumento();
     
-    abstract public Tiquete transformarATiquete(String type);
 }

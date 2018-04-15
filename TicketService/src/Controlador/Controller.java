@@ -7,6 +7,10 @@ package Controlador;
 
 import Model.Tiquete;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException;
 
 /**
  *
@@ -23,5 +27,21 @@ public class Controller {
     public void enviarcorreo(){}
     
     public void GestionarTiquete(){}
+    
+    public Tiquete transformarATiquete(String type, String file) throws SAXException, ParserConfigurationException {
+        
+        XML xmlFile = new XML(file);
+        
+        switch (type) {
+            case "sendC":
+                return xmlFile.transformarTiqueteConsulta();
+            case "sendRP":
+                return xmlFile.transformarTiqueteRevisionProyecto();
+            case "sendRE":
+                return xmlFile.transformarTiqueteReclamoEvaluacion();
+            default:
+                throw new IllegalArgumentException("Tipo inexistente");
+        }
+    }
     
 }

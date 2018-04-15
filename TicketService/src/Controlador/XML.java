@@ -46,7 +46,7 @@ public class XML extends GestorDocumentos{
     }
     
     @Override
-    public void transformarDocumento(String file){
+    public void transformarDocumento(){
         try {
                 File filename =new File(file);
                 FileReader reader = new FileReader(filename.getAbsolutePath());
@@ -112,7 +112,7 @@ public class XML extends GestorDocumentos{
     };
     
     //INSTANCIA UN OBJETO DE TIPO TIQUETECONSULTA
-    public TiqueteConsulta transformarTiqueteConsulta(String file) throws SAXException, ParserConfigurationException{
+    public TiqueteConsulta transformarTiqueteConsulta() throws SAXException, ParserConfigurationException{
         try {
             
             File filename =new File(file);
@@ -164,7 +164,7 @@ public class XML extends GestorDocumentos{
     }
     
     //INSTANCIA UN OBJETO DE TIPO TIQUETEREVISIONPROYECTOS
-    public TiqueteRevisionProyecto transformarTiqueteRevisionProyecto(String file) throws ParserConfigurationException, SAXException{
+    public TiqueteRevisionProyecto transformarTiqueteRevisionProyecto() throws ParserConfigurationException, SAXException{
         try {
             
             File filename =new File(file);
@@ -214,7 +214,7 @@ public class XML extends GestorDocumentos{
     }
     
     //INSTANCIA UN OBJETO DE TIPO TIQUETERECLAMOEVALUACION
-    public TiqueteReclamoEvaluacion transformarTiqueteReclamoEvaluacion(String file) throws ParserConfigurationException, SAXException{
+    public TiqueteReclamoEvaluacion transformarTiqueteReclamoEvaluacion() throws ParserConfigurationException, SAXException{
         try {
             
             File filename =new File(file);
@@ -266,24 +266,4 @@ public class XML extends GestorDocumentos{
         return null;
     }
 
-    @Override
-    public Tiquete transformarATiquete(String type) {
-        try {
-            switch (type) {
-                case "sendC":
-                    return transformarTiqueteConsulta(file);
-                case "sendRP":
-                    return transformarTiqueteRevisionProyecto(file);
-                case "sendRE":
-                    return transformarTiqueteReclamoEvaluacion(file);
-                default:
-                    throw new IllegalArgumentException("Tipo inexistente");
-            }
-        } catch (SAXException ex) {
-            Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ParserConfigurationException ex) {
-            Logger.getLogger(XML.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return null;
-    }
 }
