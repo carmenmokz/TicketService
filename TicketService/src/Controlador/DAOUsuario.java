@@ -73,7 +73,14 @@ public class DAOUsuario {
                          "   " + carne + ")");
     }
     
-    //actualizar
+    //ACTUALIZA UN USUARIO EN LA BASE DE DATOS
+    public void actualizar(int carne, String password) throws SQLException{
+        Statement st = connection.createStatement();
+        st.executeQuery("UPDATE Usuario\n" +
+                        "SET password = '" + password + "'\n" +
+                        "WHERE carne = " + carne + ";");
+        
+    }
     
     //BORRA ELEMENTO DE LA TABLA USUARIO DE LA BASE DE DATOS SEGUN SU NUMERO DE CARNE
     public void borrar(int carne) throws SQLException{
