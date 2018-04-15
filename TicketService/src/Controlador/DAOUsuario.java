@@ -26,7 +26,7 @@ public class DAOUsuario {
     public static Connection OpenConnection(){
         try {
             DriverManager.registerDriver(new com.microsoft.sqlserver.jdbc.SQLServerDriver());
-            connection = DriverManager.getConnection("jdbc:sqlserver://localhost;databaseName=Tickets;user=loui77;password=");
+            connection = DriverManager.getConnection("jdbc:sqlserver://localhost;databaseName=Tickets;user=sa;password=bulletproof");
             if (connection != null) {
                 System.out.println("Connected to Database");
                 return connection;
@@ -78,7 +78,7 @@ public class DAOUsuario {
         Statement st = connection.createStatement();
         st.executeQuery("UPDATE Usuario\n" +
                         "SET password = '" + password + "'\n" +
-                        "WHERE carne = " + carne + ";");
+                        "WHERE id = " + carne + ";");
         
     }
     

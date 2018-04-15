@@ -100,9 +100,6 @@
     <Component class="javax.swing.JTextField" name="txt_gui_ingresarCorreo">
     </Component>
     <Component class="javax.swing.JPasswordField" name="pass_gui_ingresarPassword">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jPasswordField1"/>
-      </Properties>
     </Component>
   </SubComponents>
 </Form>

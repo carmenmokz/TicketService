@@ -53,8 +53,6 @@ public class GUI extends javax.swing.JFrame {
 
         btn_gui_registrar.setText("Registrar");
 
-        pass_gui_ingresarPassword.setText("jPasswordField1");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -101,16 +99,19 @@ public class GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_gui_ingresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_gui_ingresarActionPerformed
-        // TODO add your handling code here:
+        if (txt_gui_ingresarCorreo.getText().equals("") || String.valueOf(pass_gui_ingresarPassword.getPassword()).equals("")) {
+            JOptionPane.showMessageDialog(null,"Dejo algun espacio vacio");
 
-       if (txt_gui_ingresarCorreo.getText().equals("") || String.valueOf(pass_gui_ingresarPassword.getPassword()).equals("")) {
-           correo = txt_gui_ingresarCorreo.getText();
-           password = String.valueOf(pass_gui_ingresarPassword.getPassword());
        }
-       else{
-           JOptionPane.showMessageDialog(null,"No escribio el correo");
-       }
-               
+       else{           
+           DTOGUI dtologin = new DTOGUI(txt_gui_ingresarCorreo.getText(), String.valueOf(pass_gui_ingresarPassword.getPassword()));   
+           if(dtologin.logIn() == true){
+               JOptionPane.showMessageDialog(null,"Que carga que es monse");
+           }
+           else{
+               JOptionPane.showMessageDialog(null,"Los datos introducidos son incorrectos");
+           }
+        }
     }//GEN-LAST:event_btn_gui_ingresarActionPerformed
 
     /**
