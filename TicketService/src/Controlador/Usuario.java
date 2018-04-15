@@ -12,6 +12,8 @@ package Controlador;
 public class Usuario {
     
     
-    public void ingresar(){};
+    public void ingresar(){
+        
+    };
     public void registrar(){};
 }
