@@ -5,10 +5,11 @@
  */
 package VistaEstudiante;
 
-import java.util.Scanner;
-
-import Model.DAOUsuario;
-import java.util.InputMismatchException;
+import static Controlador.XML.id;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 /**
  *
@@ -24,6 +25,57 @@ public class Estudiante {
         // TODO code application logic here
         //DAOUsuario con = new DAOUsuario();
         //con.OpenConnection();
+            
+        Connection connection;
+        try {
+            System.out.println("pich");
+            DriverManager.registerDriver(new com.microsoft.sqlserver.jdbc.SQLServerDriver());
+            System.out.println("dammit");
+            connection = DriverManager.getConnection("jdbc:sqlserver://localhost;databaseName=prueba;user=sa;password=zeropaladin1");
+            System.out.println("ugh");
+            if (connection != null) {
+                System.out.println("Connected");
+                //DatabaseMetaData dm = (DatabaseMetaData) connection.getMetaData();
+                //System.out.println("Driver name: " + dm.getDriverName());
+                //System.out.println("Driver version: " + dm.getDriverVersion());
+                //System.out.println("Product name: " + dm.getDatabaseProductName());
+                //System.out.println("Product version: " + dm.getDatabaseProductVersion());
+            }
+            System.out.println(connection.getCatalog());
+            System.out.println("really");
+            Statement st = connection.createStatement();
+            System.out.println("madre");
+            ResultSet rs;
+            //rs = st.executeQuery("SELECT codigoCurso FROM Curso");
+            rs = st.executeQuery("SELECT codigoCurso FROM Curso");
+            System.out.println("mia");
+            String codcurso;
+            System.out.println("willy");
+            System.out.println(rs);
+            System.out.println("hola");
+            while(rs.next()){
+                codcurso=rs.getString("codigoCurso");
+                System.out.println(codcurso);
+            }
+            System.out.println("prueba" + id);
+            id++;
+            System.out.println("prueba" + id);
+        } catch (Exception e) {
+        }
+    }
+
+
+        
+        
+        
+        
+        
+        
+        
+       /* 
+        
+        //---------------------------------
+        
         Scanner scan = new Scanner(System.in);
         boolean salir = false;
         int opcion; //Guardaremos la opcion del usuario
@@ -45,7 +97,14 @@ public class Estudiante {
             
            switch(opcion){
                case 1:
-                   System.out.println("Has seleccionado la opcion 1");
+                   System.out.println("La sintaxis correcta para utilizar la aplicacion es la siguiente: ");
+                   System.out.println("");
+                   System.out.println();
+                   System.out.println();
+                   System.out.println();
+                   System.out.println();
+                   System.out.println();
+                   System.out.println();
                    break;
                case 2:
                    System.out.println("Has seleccionado la opcion 2");
@@ -82,5 +141,5 @@ public class Estudiante {
         
     
     
-}
+}*/
 }

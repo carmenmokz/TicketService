@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package Controlador;
 
+
+import Controlador.OrdenamientoStrategy;
 import java.util.Collections;
 //importar lista
 
@@ -12,10 +14,11 @@ import java.util.Collections;
  *
  * @author Monserrath
  */
-public class OrdenamientoTipo implements OrdenamientoStrategy{
-
+public class OrdenamientoFecha implements OrdenamientoStrategy {
+    
     @Override
     public void ordenar() {
-        //Collections.sort(nombre lista, (Profesor t1, Profesor t2) -> t1.compareTo(t2));
+        //Collections.sort(nombre de la lista, (Tiquete t1, Tiquete t2) -> t1.fecha.compareTo(t2.fecha));
     }
+    
 }

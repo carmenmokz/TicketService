@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package Controlador;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author carme
+ * @author luis
  */
 public class DAOUsuario {
     static Connection connection;
@@ -26,7 +26,7 @@ public class DAOUsuario {
     public static Connection OpenConnection(){
         try {
             DriverManager.registerDriver(new com.microsoft.sqlserver.jdbc.SQLServerDriver());
-            connection = DriverManager.getConnection("jdbc:sqlserver://localhost;databaseName=Tickets;user=sa;password=bulletproof");
+            connection = DriverManager.getConnection("jdbc:sqlserver://localhost;databaseName=Tickets;user=loui77;password=");
             if (connection != null) {
                 System.out.println("Connected to Database");
                 return connection;
