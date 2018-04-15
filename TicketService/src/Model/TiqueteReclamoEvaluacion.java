@@ -27,6 +27,7 @@ public class TiqueteReclamoEvaluacion extends Tiquete {
         this.tipoPrueba = tipoPrueba;
         this.detalleReclamo = detalleReclamo;
         this.nombreArchivo = nombreArchivo;
+        this.tipoTiquete = "TiqueteRE";
     }
 
     

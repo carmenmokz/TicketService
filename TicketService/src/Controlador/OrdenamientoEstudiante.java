@@ -7,7 +7,6 @@ package Controlador;
 
 
 import java.util.Collections;
-import Controlador.Controller;
 import Model.Tiquete;
 //importar la lista
 

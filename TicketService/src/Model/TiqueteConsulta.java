@@ -19,7 +19,7 @@ public class TiqueteConsulta extends Tiquete{
     private String detalles;
     private String credenciales;
     private String asunto;
-    private String tipoTiquete;
+    private String tipoTiqueteC;
     
     /*
     public TiqueteConsulta(Date fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete) {
@@ -29,14 +29,15 @@ public class TiqueteConsulta extends Tiquete{
 
 
 
-    public TiqueteConsulta(String duracion, String detalles, String credenciales, String asunto, String tipoTiquete, LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete, int grupo) {
+    public TiqueteConsulta(String duracion, String detalles, String credenciales, String asunto, String tipoTiqueteC, LocalDateTime fecha, String carneEstudiante, String nombreEstudiante, String correoEstudiante, int IDTiquete, int grupo) {
         super(fecha, carneEstudiante, nombreEstudiante, correoEstudiante, IDTiquete, grupo);
 
         this.duracion = duracion;
         this.detalles = detalles;
         this.credenciales = credenciales;
         this.asunto = asunto;
-        this.tipoTiquete = tipoTiquete;
+        this.tipoTiqueteC = tipoTiqueteC;
+        this.tipoTiquete = "Consulta";
     }
 
     

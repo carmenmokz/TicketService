@@ -25,6 +25,7 @@ public class TiqueteRevisionProyecto extends Tiquete{
         this.comentario = comentario;
         this.descripcion = descripcion;
         this.nombreArchivo = nombreArchivo;
+        this.tipoTiquete = "TiqueteRP";
     }
 
     

@@ -4,10 +4,8 @@
  * and open the template in the editor.
  */
 package Controlador;
-
-import Controlador.OrdenamientoStrategy;
 import java.util.Collections;
-import Controlador.Controller;
+import Model.Tiquete;
 
 /**
  *
@@ -17,6 +15,7 @@ public class OrdenamientoTipo implements OrdenamientoStrategy{
 
     @Override
     public void ordenar() {
-        //Collections.sort(Controller.listaTiquetes, (Tiquete t1, Tiquete t2) -> t1.getClass();
+       Collections.sort(Controller.listaTiquetes, (Tiquete t1, Tiquete t2) -> t1.getTipoTiquete().compareTo(t2.getTipoTiquete()));
     }
+   
 }

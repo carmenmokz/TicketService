@@ -17,6 +17,7 @@ protected LocalDateTime fecha;
 protected String carneEstudiante;
 protected String nombreEstudiante;
 protected String correoEstudiante;
+protected String tipoTiquete;
 protected int IDTiquete;
 protected int grupo;
 
@@ -31,6 +32,10 @@ protected int grupo;
         this.grupo = grupo;
     }
 
+    public String getTipoTiquete() {
+        return tipoTiquete;
+    }
+    
     public LocalDateTime getFecha() {
         return fecha;
     }

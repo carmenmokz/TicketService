@@ -6,9 +6,7 @@
 package Controlador;
 
 
-import Controlador.OrdenamientoStrategy;
 import java.util.Collections;
-import Controlador.Controller;
 import Model.Tiquete;
 
 /**

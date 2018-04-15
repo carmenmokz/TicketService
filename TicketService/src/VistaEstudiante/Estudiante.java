@@ -31,11 +31,8 @@ public class Estudiante {
             
         Connection connection;
         try {
-            System.out.println("pich");
             DriverManager.registerDriver(new com.microsoft.sqlserver.jdbc.SQLServerDriver());
-            System.out.println("dammit");
-            connection = DriverManager.getConnection("jdbc:sqlserver://localhost;databaseName=prueba;user=sa;password=zeropaladin1");
-            System.out.println("ugh");
+            connection = DriverManager.getConnection("jdbc:sqlserver://localhost;databaseName=Tickets;user=sa;password=bulletproof");
             if (connection != null) {
                 System.out.println("Connected");
                 //DatabaseMetaData dm = (DatabaseMetaData) connection.getMetaData();
@@ -44,18 +41,13 @@ public class Estudiante {
                 //System.out.println("Product name: " + dm.getDatabaseProductName());
                 //System.out.println("Product version: " + dm.getDatabaseProductVersion());
             }
-            System.out.println(connection.getCatalog());
-            System.out.println("really");
+    
             Statement st = connection.createStatement();
-            System.out.println("madre");
             ResultSet rs;
             //rs = st.executeQuery("SELECT codigoCurso FROM Curso");
             rs = st.executeQuery("SELECT codigoCurso FROM Curso");
-            System.out.println("mia");
             String codcurso;
-            System.out.println("willy");
             System.out.println(rs);
-            System.out.println("hola");
             while(rs.next()){
                 codcurso=rs.getString("codigoCurso");
                 System.out.println(codcurso);
