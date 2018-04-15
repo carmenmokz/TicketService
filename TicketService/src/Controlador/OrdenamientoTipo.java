@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package Controlador;
 
-
+import Controlador.OrdenamientoStrategy;
 import java.util.Collections;
 import Controller.Controller;
 
@@ -13,11 +13,10 @@ import Controller.Controller;
  *
  * @author Monserrath
  */
-public class OrdenamientoFecha implements OrdenamientoStrategy {
-    
+public class OrdenamientoTipo implements OrdenamientoStrategy{
+
     @Override
     public void ordenar() {
-        Collections.sort(Controller.listaTiquetes, (Tiquete t1, Tiquete t2) -> t1.fecha.compareTo(t2.fecha));
+        //Collections.sort(Controller.listaTiquetes, (Tiquete t1, Tiquete t2) -> t1.getClass();
     }
-    
 }

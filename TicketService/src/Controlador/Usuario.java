@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package Controlador;
 
 /**
  *
- * @author Monserrath
+ * @author Luis Mora
  */
-public interface Ordenamiento{
+public class Usuario {
     
-    public void ordenar();
+    
+    public void ingresar(){};
+    public void registrar(){};
 }
-

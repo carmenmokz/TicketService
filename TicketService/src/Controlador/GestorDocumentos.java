@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package Controlador;
 
+import Model.Tiquete;
 import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Document;
 
