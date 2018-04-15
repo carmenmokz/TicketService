@@ -5,15 +5,12 @@
  */
 package Controlador;
 
-import Model.Tiquete;
 import Model.TiqueteConsulta;
 import Model.TiqueteReclamoEvaluacion;
 import Model.TiqueteRevisionProyecto;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
-import static java.lang.System.out;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Enumeration;
