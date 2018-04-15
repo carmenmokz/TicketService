@@ -85,7 +85,7 @@ public class DAOUsuario {
     //BORRA ELEMENTO DE LA TABLA USUARIO DE LA BASE DE DATOS SEGUN SU NUMERO DE CARNE
     public void borrar(int carne) throws SQLException{
         Statement st = connection.createStatement();
-        st.executeUpdate("DELETE FROM Curso\n" +
+        st.executeUpdate("DELETE FROM Usuario\n" +
                          "WHERE codigoCurso = " + "'" + carne + "'" + ";");
     }
     
