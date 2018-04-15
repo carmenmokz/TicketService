@@ -7,7 +7,7 @@ package Controlador;
 
 import Controlador.OrdenamientoStrategy;
 import java.util.Collections;
-import Controller.Controller;
+import Controlador.Controller;
 
 /**
  *

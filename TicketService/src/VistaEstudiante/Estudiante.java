@@ -11,7 +11,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import Model.DAOUsuario;
+import Controlador.DAOUsuario;
 import java.util.InputMismatchException;
 
 /**

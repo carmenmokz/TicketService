@@ -8,7 +8,8 @@ package Controlador;
 
 import Controlador.OrdenamientoStrategy;
 import java.util.Collections;
-import Controller.Controller;
+import Controlador.Controller;
+import Model.Tiquete;
 
 /**
  *
@@ -18,7 +19,7 @@ public class OrdenamientoFecha implements OrdenamientoStrategy {
     
     @Override
     public void ordenar() {
-        Collections.sort(Controller.listaTiquetes, (Tiquete t1, Tiquete t2) -> t1.fecha.compareTo(t2.fecha));
+        Collections.sort(Controller.listaTiquetes, (Tiquete t1, Tiquete t2) -> t1.getFecha().compareTo(t2.getFecha()));
     }
     
 }

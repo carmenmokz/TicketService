@@ -7,7 +7,8 @@ package Controlador;
 
 
 import java.util.Collections;
-import Controller.Controller;
+import Controlador.Controller;
+import Model.Tiquete;
 //importar la lista
 
 
@@ -21,6 +22,6 @@ public class OrdenamientoEstudiante implements OrdenamientoStrategy{
     public void ordenar() {
         //Ese list, es la lista que se va a comparar, nadamas que aqui todavia no existe
         //bueno, tecnicamente XD.
-        Collections.sort(Controller.listaTiquetes, (Tiquete t1, Tiquete t2) -> t1.nombreEstudiante.compareTo(t2.nombreEstudiante));
+        Collections.sort(Controller.listaTiquetes, (Tiquete t1, Tiquete t2) -> t1.getNombreEstudiante().compareTo(t2.getNombreEstudiante()));
     }
 }

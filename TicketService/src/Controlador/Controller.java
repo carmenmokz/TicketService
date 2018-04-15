@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * @author Luis Mora
  */
 public class Controller {
-    ArrayList<Tiquete> listaTiquetes;
+    public static ArrayList<Tiquete> listaTiquetes = new ArrayList<Tiquete>();
     
     
     
