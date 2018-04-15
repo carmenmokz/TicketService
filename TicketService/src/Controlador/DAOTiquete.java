@@ -11,6 +11,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 /**
  *
@@ -60,21 +61,17 @@ public class DAOTiquete {
     
     //MOSTRAR LOS TIQUETES
     //RETORNA NOMBRE DEL ARCHIVO XML PARA CREAR LOS TIQUETES
-    public String leer(String loginMail, String password) throws SQLException{
+    public ArrayList<String> leer() throws SQLException{
+        ArrayList<String> tiquetes = new ArrayList<String>();
+        
         Statement st = connection.createStatement();
         ResultSet rs;
-        rs = st.executeQuery("SELECT correo, password FROM Tiquete");
-        String login;
-        String pwd;
+        rs = st.executeQuery("SELECT codigoTiquete FROM Tiquete WHERE respondido == 0");
+        String codigoTiquete;
         while(rs.next()){
-            login = rs.getString("correo");
-            pwd = rs.getString("password");
-            if(login.equals(loginMail) && pwd.equals(password)){
-                return true;
-            }else{
-                return false;
-            }
+            codigoTiquete = rs.getString("codigoTiquete");
+            tiquetes.add(codigoTiquete);
         }
-        return false;
+        return tiquetes;
     }
 }

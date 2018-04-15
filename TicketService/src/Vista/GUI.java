@@ -38,71 +38,48 @@ public class GUI extends javax.swing.JFrame {
         txt_gui_ingresarCorreo = new javax.swing.JTextField();
         pass_gui_ingresarPassword = new javax.swing.JPasswordField();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Correo");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, 60, -1));
 
+        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Password");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 80, -1));
 
+        btn_gui_ingresar.setBackground(new java.awt.Color(0, 153, 153));
+        btn_gui_ingresar.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        btn_gui_ingresar.setForeground(new java.awt.Color(255, 255, 255));
         btn_gui_ingresar.setText("Ingresar");
         btn_gui_ingresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_gui_ingresarActionPerformed(evt);
             }
         });
+        getContentPane().add(btn_gui_ingresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, 100, 30));
 
+        btn_gui_registrar.setBackground(new java.awt.Color(0, 153, 153));
+        btn_gui_registrar.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        btn_gui_registrar.setForeground(new java.awt.Color(255, 255, 255));
         btn_gui_registrar.setText("Registrar");
+        getContentPane().add(btn_gui_registrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 100, 30));
+        getContentPane().add(txt_gui_ingresarCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 115, 170, -1));
+        getContentPane().add(pass_gui_ingresarPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 153, 170, -1));
 
         jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Mint Eye Ticket Service");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(81, 81, 81)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btn_gui_registrar))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel1))
-                                .addGap(26, 26, 26)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txt_gui_ingresarCorreo)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(19, 19, 19)
-                                        .addComponent(btn_gui_ingresar))
-                                    .addComponent(pass_gui_ingresarPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jLabel3))
-                        .addGap(60, 60, 60)))
-                .addContainerGap(94, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(txt_gui_ingresarCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(pass_gui_ingresarPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addComponent(btn_gui_ingresar)
-                .addGap(53, 53, 53)
-                .addComponent(btn_gui_registrar)
-                .addGap(65, 65, 65))
-        );
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\carme\\Documents\\TEC\\I SEMESTRE 2018\\DISEÑO DE SOFTWARE\\Proyecto1\\TicketService\\images\\bk.JPG")); // NOI18N
+        jLabel4.setText("jLabel4");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 440, 380));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -164,6 +141,7 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPasswordField pass_gui_ingresarPassword;
     private javax.swing.JTextField txt_gui_ingresarCorreo;
     // End of variables declaration//GEN-END:variables
