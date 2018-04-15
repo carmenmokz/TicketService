@@ -2,20 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/carme/Documents/TEC/I%20SEMESTRE%202018/DISEÑO%20DE%20SOFTWARE/Proyecto1/TicketService/TicketService/src/Model/TiqueteReclamoEvaluacion.java</file>
-            <file>file:/C:/Users/carme/Documents/TEC/I%20SEMESTRE%202018/DISEÑO%20DE%20SOFTWARE/Proyecto1/TicketService/TicketService/src/Model/Tiquete.java</file>
-            <file>file:/C:/Users/carme/Documents/TEC/I%20SEMESTRE%202018/DISEÑO%20DE%20SOFTWARE/Proyecto1/TicketService/TicketService/src/Model/GestorOrdenamiento.java</file>
-            <file>file:/C:/Users/carme/Documents/TEC/I%20SEMESTRE%202018/DISEÑO%20DE%20SOFTWARE/Proyecto1/TicketService/TicketService/src/Model/OrdenamientoCurso.java</file>
-            <file>file:/C:/Users/carme/Documents/TEC/I%20SEMESTRE%202018/DISEÑO%20DE%20SOFTWARE/Proyecto1/TicketService/TicketService/src/Model/XML.java</file>
-            <file>file:/C:/Users/carme/Documents/TEC/I%20SEMESTRE%202018/DISEÑO%20DE%20SOFTWARE/Proyecto1/TicketService/TicketService/src/Model/TiqueteRevisionProyecto.java</file>
-            <file>file:/C:/Users/carme/Documents/TEC/I%20SEMESTRE%202018/DISEÑO%20DE%20SOFTWARE/Proyecto1/TicketService/TicketService/src/VistaEstudiante/Estudiante.java</file>
-            <file>file:/C:/Users/carme/Documents/TEC/I%20SEMESTRE%202018/DISEÑO%20DE%20SOFTWARE/Proyecto1/TicketService/TicketService/src/Model/DAOUsuario.java</file>
-            <file>file:/C:/Users/carme/Documents/TEC/I%20SEMESTRE%202018/DISEÑO%20DE%20SOFTWARE/Proyecto1/TicketService/TicketService/src/Model/OrdenamientoFecha.java</file>
-            <file>file:/C:/Users/carme/Documents/TEC/I%20SEMESTRE%202018/DISEÑO%20DE%20SOFTWARE/Proyecto1/TicketService/TicketService/src/Model/OrdenamientoStrategy.java</file>
-            <file>file:/C:/Users/carme/Documents/TEC/I%20SEMESTRE%202018/DISEÑO%20DE%20SOFTWARE/Proyecto1/TicketService/TicketService/src/Model/OrdenamientoEstudiante.java</file>
-            <file>file:/C:/Users/carme/Documents/TEC/I%20SEMESTRE%202018/DISEÑO%20DE%20SOFTWARE/Proyecto1/TicketService/TicketService/src/Model/OrdenamientoTipo.java</file>
-            <file>file:/C:/Users/carme/Documents/TEC/I%20SEMESTRE%202018/DISEÑO%20DE%20SOFTWARE/Proyecto1/TicketService/TicketService/src/Model/TiqueteConsulta.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

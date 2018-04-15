@@ -7,7 +7,7 @@ package Model;
 
 
 import java.util.Collections;
-//importar lista
+import Controller.Controller;
 
 /**
  *
@@ -17,7 +17,7 @@ public class OrdenamientoFecha implements OrdenamientoStrategy {
     
     @Override
     public void ordenar() {
-        //Collections.sort(nombre de la lista, (Tiquete t1, Tiquete t2) -> t1.fecha.compareTo(t2.fecha));
+        Collections.sort(Controller.listaTiquetes, (Tiquete t1, Tiquete t2) -> t1.fecha.compareTo(t2.fecha));
     }
     
 }

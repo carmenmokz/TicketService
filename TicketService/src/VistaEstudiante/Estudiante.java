@@ -7,7 +7,7 @@ package VistaEstudiante;
 
 import java.util.Scanner;
 
-import Model.DAOUsuario;
+import Controller.DAOUsuario;
 import java.util.InputMismatchException;
 
 /**

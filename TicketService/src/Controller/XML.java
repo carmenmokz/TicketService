@@ -3,8 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package Controller;
 
+import Model.GestorDocumentos;
+import Model.Tiquete;
+import Model.TiqueteConsulta;
+import Model.TiqueteReclamoEvaluacion;
+import Model.TiqueteRevisionProyecto;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;

@@ -6,7 +6,7 @@
 package Model;
 
 import java.util.Collections;
-//importar lista
+import Controller.Controller;
 
 /**
  *
@@ -16,6 +16,6 @@ public class OrdenamientoTipo implements OrdenamientoStrategy{
 
     @Override
     public void ordenar() {
-        //Collections.sort(nombre lista, (Profesor t1, Profesor t2) -> t1.compareTo(t2));
+        //Collections.sort(Controller.listaTiquetes, (Tiquete t1, Tiquete t2) -> t1.getClass();
     }
 }
