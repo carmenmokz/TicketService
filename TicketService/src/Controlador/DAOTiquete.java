@@ -66,7 +66,7 @@ public class DAOTiquete {
         
         Statement st = connection.createStatement();
         ResultSet rs;
-        rs = st.executeQuery("SELECT codigoTiquete FROM Tiquete WHERE respondido == 0");
+        rs = st.executeQuery("SELECT codigoTiquete FROM Tiquete WHERE respondido = 0");
         String codigoTiquete;
         while(rs.next()){
             codigoTiquete = rs.getString("codigoTiquete");

@@ -5,6 +5,9 @@
  */
 package Vista;
 
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -87,12 +90,16 @@ public class GUI extends javax.swing.JFrame {
     private void btn_gui_ingresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_gui_ingresarActionPerformed
         if (txt_gui_ingresarCorreo.getText().equals("") || String.valueOf(pass_gui_ingresarPassword.getPassword()).equals("")) {
             JOptionPane.showMessageDialog(null,"Dejo algun espacio vacio");
-
        }
        else{           
            DTOGUI dtologin = new DTOGUI(txt_gui_ingresarCorreo.getText(), String.valueOf(pass_gui_ingresarPassword.getPassword()));   
            if(dtologin.logIn() == true){
                JOptionPane.showMessageDialog(null,"Que carga que es monse");
+               try {
+                   dtologin.profActual();
+               } catch (SQLException ex) {
+                   Logger.getLogger(GUI.class.getName()).log(Level.SEVERE, null, ex);
+               }
            }
            else{
                JOptionPane.showMessageDialog(null,"Los datos introducidos son incorrectos");

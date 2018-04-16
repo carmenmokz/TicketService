@@ -24,16 +24,15 @@ import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import Model.Profesor;
+
 /**
  *
  * @author Luis Mora
  */
 public class Controller {
     public static ArrayList<Tiquete> listaTiquetes = new ArrayList<Tiquete>();
-    
-    
-    
-    
+    public static Profesor profeActual = new Profesor();
     
     //---------------------------------
     public void enviarcorreo(String correo, String asunto, String cuerpo) throws AddressException, MessagingException{
@@ -93,5 +92,4 @@ public class Controller {
                 throw new IllegalArgumentException("Tipo inexistente");
         }
     }
-    
 }
