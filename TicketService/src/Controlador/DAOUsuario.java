@@ -10,6 +10,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -87,6 +88,27 @@ public class DAOUsuario {
         Statement st = connection.createStatement();
         st.executeUpdate("DELETE FROM Usuario\n" +
                          "WHERE codigoCurso = " + "'" + carne + "'" + ";");
+    }
+    
+    //RETORNA INFORMACION DE UN PROFESOR
+    public ArrayList<String> seleccionarProfesor(String loginMail) throws SQLException{
+        ArrayList<String> informacion = new ArrayList<>();
+        Statement st = connection.createStatement();
+        ResultSet rs;
+        rs = st.executeQuery("SELECT nombreCompleto, correo, password FROM Usuario WHERE correo ="+"'"+loginMail+"'");
+        String nombre;
+        String email;
+        String pwd;
+        while(rs.next()){
+            nombre = rs.getString("nombreCompleto");
+            email = rs.getString("correo");
+            pwd = rs.getString("password");
+            informacion.add(nombre);
+            informacion.add(email);
+            informacion.add(pwd);
+            
+        }
+        return informacion;
     }
     
 }

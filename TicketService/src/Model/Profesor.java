@@ -13,13 +13,15 @@ public class Profesor {
     private String nombreCompleto;
     private String correo;
     private String password;
-    private String codigoCurso;
 
-    public Profesor(String nombreCompleto, String correo, String password, String codigoCurso) {
+
+    public Profesor(String nombreCompleto, String correo, String password) {
         this.nombreCompleto = nombreCompleto;
         this.correo = correo;
         this.password = password;
-        this.codigoCurso = codigoCurso;
+    }
+
+    public Profesor() {
     }
 
     public String getNombreCompleto() {
@@ -34,10 +36,6 @@ public class Profesor {
         return password;
     }
 
-    public String getcodigoCurso() {
-        return codigoCurso;
-    }
-
     public void setNombreCompleto(String nombreCompleto) {
         this.nombreCompleto = nombreCompleto;
     }
@@ -50,9 +48,5 @@ public class Profesor {
         this.password = password;
     }
 
-    public void setcodigoCurso(String codigoCurso) {
-        this.codigoCurso = codigoCurso;
-    }
-    
     
 }
